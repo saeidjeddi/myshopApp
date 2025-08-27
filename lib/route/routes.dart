@@ -9,6 +9,6 @@ Map<String, Widget Function(BuildContext)> routes = {
 
   ScreenRoutNames.root : (context) => SendOtpScreen(),
   ScreenRoutNames.getOtpScreen : (context) => GetOtpScreen(),
-  ScreenRoutNames.registerOtpScreen : (context) => RegisterOtpScreen(),
+  ScreenRoutNames.registerOtpScreen : (context) => RegisterOtpScreen(), 
   ScreenRoutNames.mainScreen : (context) => MainScreen(),
 };

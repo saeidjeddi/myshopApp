@@ -14,7 +14,8 @@ class AppTextStyles {
 
 
   static const TextStyle selectedTab = TextStyle(
-      fontFamily: 'Dana', fontSize: 14, color: AppColors.title);
+      fontFamily: 'Dana', fontSize: 14, color: AppColors.title
+      );
 
   static TextStyle unSelectedTab = TextStyle(
       fontFamily: 'Dana',

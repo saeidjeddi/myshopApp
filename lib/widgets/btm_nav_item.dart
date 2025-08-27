@@ -10,7 +10,7 @@ class BtnNavItem extends StatelessWidget {
   bool isActive;
   void Function() onTap;
 
-  BtnNavItem({
+  BtnNavItem({super.key, 
     required this.iconSvgPath,
     required this.text,
     required this.isActive,

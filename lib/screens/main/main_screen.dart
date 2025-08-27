@@ -14,25 +14,22 @@ class BtmNavScrinIndex {
   static const profile = 2;
 }
 
-class MainScreen extends StatelessWidget {
+class MainScreen extends StatefulWidget {
   MainScreen({super.key});
 
+  @override
+  State<MainScreen> createState() => _MainScreenState();
+}
+
+class _MainScreenState extends State<MainScreen> {
   int setIndex = BtmNavScrinIndex.home;
 
-
-
-
-
-
     btmNavePressIndex({required index}){
+      setState(() {
+        setIndex = index;
+      });
 
     }
-
-
-
-
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +47,11 @@ class MainScreen extends StatelessWidget {
 
               child: IndexedStack(
                 index: setIndex,
-                children: [HomeScreen(), BascketScreen(), ProfileScreen()],
+                children: [
+                    HomeScreen(),
+                    BascketScreen(),
+                    ProfileScreen(),
+                ],
               ),
             ),
 
@@ -68,20 +69,20 @@ class MainScreen extends StatelessWidget {
                     BtnNavItem(
                       iconSvgPath: Assets.svg.home,
                       text: 'Home',
-                      isActive: true,
-                      onTap: () {},
+                      isActive: setIndex == BtmNavScrinIndex.home,
+                      onTap: () => btmNavePressIndex(index: BtmNavScrinIndex.home),
                     ),
                     BtnNavItem(
                       iconSvgPath: Assets.svg.cart,
                       text: 'Cart',
-                      isActive: false,
-                      onTap: () {},
+                      isActive: setIndex == BtmNavScrinIndex.bascket,
+                      onTap: () => btmNavePressIndex(index: BtmNavScrinIndex.bascket),
                     ),
                     BtnNavItem(
                       iconSvgPath: Assets.svg.user,
                       text: 'User',
-                      isActive: false,
-                      onTap: () {},
+                      isActive: setIndex == BtmNavScrinIndex.profile,
+                      onTap: () => btmNavePressIndex(index: BtmNavScrinIndex.profile),
                     ),
                   ],
                 ),
@@ -93,6 +94,4 @@ class MainScreen extends StatelessWidget {
     );
 
   }
-
-
 }
