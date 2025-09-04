@@ -1,5 +1,6 @@
 
 
+
 class ScreenRoutNames
  {
   ScreenRoutNames._();
@@ -9,6 +10,8 @@ class ScreenRoutNames
   static const sendOtpScreen = "/sendOtpScreen";
   static const registerOtpScreen = "/registerOtpScreen";
   static const mainScreen = "/mainScreen";
+  static const productListScreen = "/productListScreen";
+  static const productSingleScreen = "/productSingleScreen";
 
 
 }
