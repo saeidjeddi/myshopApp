@@ -1,19 +1,32 @@
 import 'package:flutter/material.dart';
-import 'package:shop_blog/screens/product_list_screen.dart';
+import 'package:shop_blog/components/text_style.dart';
+import 'package:shop_blog/gen/assets.gen.dart';
+import 'package:shop_blog/res/colors.dart';
+import 'package:shop_blog/res/dimens.dart';
+import 'package:shop_blog/widgets/app_slider.dart';
+import 'package:shop_blog/widgets/searchBtn.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    Size size = MediaQuery.of(context).size;
+    return Scaffold(
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              SearchBtnMainHome(size: size, onTap:() {},),
 
-      color: Colors.blue,
-      height: double.infinity,
-      width: double.infinity,
-      child: Center(child: ElevatedButton(onPressed: () {
-        Navigator.of(context).push(MaterialPageRoute(builder: (context) => ProductListScreen()));
-      }, child: Text('مشاهده جزئیات محصول'))),
+              AppSlider(size: size),
+              
+              
+              
+               ],
+          ),
+        ),
+      ),
     );
   }
 }
