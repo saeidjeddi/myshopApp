@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:shop_blog/components/text_style.dart';
-import 'package:shop_blog/gen/assets.gen.dart';
-import 'package:shop_blog/res/colors.dart';
-import 'package:shop_blog/res/dimens.dart';
 import 'package:shop_blog/widgets/app_slider.dart';
 import 'package:shop_blog/widgets/searchBtn.dart';
 
