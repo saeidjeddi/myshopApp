@@ -54,8 +54,8 @@ class $AssetsSvgGen {
   /// File path: assets/svg/delivered.svg
   String get delivered => 'assets/svg/delivered.svg';
 
-  /// File path: assets/svg/desktop.svg
-  String get desktop => 'assets/svg/desktop.svg';
+  /// File path: assets/svg/desktopcloc.svg
+  String get desktopcloc => 'assets/svg/desktopcloc.svg';
 
   /// File path: assets/svg/digital.svg
   String get digital => 'assets/svg/digital.svg';
@@ -99,6 +99,9 @@ class $AssetsSvgGen {
   /// File path: assets/svg/user_menu.svg
   String get userMenu => 'assets/svg/user_menu.svg';
 
+  /// File path: assets/svg/كارت ورود به جلسه.pdf
+  String get a => 'assets/svg/كارت ورود به جلسه.pdf';
+
   /// List of all assets
   List<String> get values => [
     avatar,
@@ -109,7 +112,7 @@ class $AssetsSvgGen {
     close,
     delete,
     delivered,
-    desktop,
+    desktopcloc,
     digital,
     home,
     inProccess,
@@ -124,6 +127,7 @@ class $AssetsSvgGen {
     sort,
     user,
     userMenu,
+    a,
   ];
 }
 

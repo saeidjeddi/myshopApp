@@ -135,21 +135,21 @@ class _MainScreenState extends State<MainScreen> {
                     children: [
                       BtnNavItem(
                         iconSvgPath: Assets.svg.home,
-                        text: 'Home',
+                        text: 'خانه',
                         isActive: setIndex == BtmNavScrinIndex.home,
                         onTap: () =>
                             btmNavePressIndex(index: BtmNavScrinIndex.home),
                       ),
                       BtnNavItem(
                         iconSvgPath: Assets.svg.cart,
-                        text: 'Cart',
+                        text: 'سبد خرید',
                         isActive: setIndex == BtmNavScrinIndex.bascket,
                         onTap: () =>
                             btmNavePressIndex(index: BtmNavScrinIndex.bascket),
                       ),
                       BtnNavItem(
                         iconSvgPath: Assets.svg.user,
-                        text: 'User',
+                        text: 'پروفایل',
                         isActive: setIndex == BtmNavScrinIndex.profile,
                         onTap: () =>
                             btmNavePressIndex(index: BtmNavScrinIndex.profile),

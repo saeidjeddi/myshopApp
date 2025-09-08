@@ -29,7 +29,11 @@ class AppTextStyles {
       fontFamily: 'Dana',
       fontSize: 16,
       color: AppColors.title,
-      fontWeight: FontWeight.normal);
+      fontWeight: FontWeight.normal,
+      overflow: TextOverflow.ellipsis,
+      
+    
+      );
 
   static TextStyle caption = TextStyle(
       fontFamily: 'Dana',
