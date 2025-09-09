@@ -12,7 +12,7 @@ final List<String> imgList = [
 ];
 
 class AppSlider extends StatefulWidget {
-  AppSlider({
+  const AppSlider({
    super.key,
    required this.size,
    required this.imgList

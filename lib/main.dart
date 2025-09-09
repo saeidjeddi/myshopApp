@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shop_blog/components/theme.dart';
 import 'package:shop_blog/route/names.dart';
 import 'package:shop_blog/route/routes.dart';
+import 'package:shop_blog/screens/product_list_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,9 +17,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: lightTheme(),
       debugShowCheckedModeBanner: false,
-      initialRoute: ScreenRoutNames.root,
-      routes:routes ,
-      // home: RegisterOtpScreen()
+      // initialRoute: ScreenRoutNames.root,
+      // routes:routes ,
+      home: ProductListScreen()
     );
   }
 }
