@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:shop_blog/components/theme.dart';
-import 'package:shop_blog/route/names.dart';
-import 'package:shop_blog/route/routes.dart';
 import 'package:shop_blog/screens/product_list_screen.dart';
 
 void main() {

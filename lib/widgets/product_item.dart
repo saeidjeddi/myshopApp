@@ -6,7 +6,7 @@ import 'package:shop_blog/res/colors.dart';
 import 'package:shop_blog/res/dimens.dart';
 
 class ProductItem extends StatelessWidget {
-  ProductItem({
+  const ProductItem({
     super.key,
     required this.productName,
     required this.price,
