@@ -6,7 +6,6 @@ import 'package:shop_blog/gen/assets.gen.dart';
 import 'package:shop_blog/res/dimens.dart';
 import 'package:shop_blog/res/strings.dart';
 import 'package:shop_blog/widgets/appbar.dart';
-import 'package:shop_blog/widgets/btn_cart_add.dart';
 import 'package:shop_blog/widgets/surfase_contener.dart';
 
 class CartScreen extends StatelessWidget {
@@ -57,6 +56,7 @@ class CartScreen extends StatelessWidget {
                   ),
 
                   Expanded(
+                    
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -84,7 +84,8 @@ class CartScreen extends StatelessWidget {
 
             Expanded(
               child: ListView.builder(
-                itemCount: 2,
+                physics: BouncingScrollPhysics(),
+                itemCount: 3,
                 itemBuilder: (context, index) {
                   return SurfaseContener(child: ShopingCartItem(prudactTitle: 'ساعت زنانه و مردانه اسپورت و هوشمند', price: 5000000, oldprice: 600000,));
                 },

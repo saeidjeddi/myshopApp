@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shop_blog/gen/assets.gen.dart';
 import 'package:shop_blog/res/colors.dart';
-import 'package:shop_blog/screens/main/bascket_screen.dart';
+import 'package:shop_blog/screens/main/cart_screen.dart';
 import 'package:shop_blog/screens/main/home_screen.dart';
 import 'package:shop_blog/screens/main/profile_screen.dart';
 import 'package:shop_blog/widgets/btm_nav_item.dart';
@@ -106,7 +106,7 @@ class _MainScreenState extends State<MainScreen> {
                       key: _basketKey,
                       onGenerateRoute: (settings) {
                         return MaterialPageRoute(
-                          builder: (context) => BascketScreen(),
+                          builder: (context) => CartScreen(),
                         );
                       },
                     ),
