@@ -87,6 +87,15 @@ class AppTextStyles {
       color: AppColors.mainButtonText,
       fontWeight: FontWeight.w500);
 
+  static const TextStyle cartBtn = TextStyle(
+      fontFamily: 'Dana',
+      fontSize: 12,
+      color: AppColors.mainButtonText,
+      fontWeight: FontWeight.w500);
+
+
+
+
   static const TextStyle primaryThemeTextStyle = TextStyle(
       fontFamily: 'Dana',
       fontSize: 15,

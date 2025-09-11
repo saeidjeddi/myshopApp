@@ -40,6 +40,12 @@ class RegisterAppBar extends StatelessWidget implements PreferredSizeWidget {
   Size get preferredSize => Size.fromHeight(size.height * .1);
 }
 
+
+
+
+
+
+
 class CustomAppBar extends StatelessWidget implements PreferredSize {
   const CustomAppBar({super.key, required this.child});
   @override
@@ -80,6 +86,18 @@ class CustomAppBar extends StatelessWidget implements PreferredSize {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 class CartBadge extends StatelessWidget {
   const CartBadge({super.key, this.count = 0});
   final int count;
